@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/purple_200"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp">
+">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/CurrentVolume"
+            android:inputType="number"
+            android:textColor="@color/white"
+            android:hint="@string/volumepercentage"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/SetVolume"
+            android:enabled="false"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:background="@drawable/rounded_rectangle"
+            android:text="@string/set_volume"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Volumebar"
+            android:inputType="number"
+            android:hint="@string/barNo"
+            android:textColor="@color/white"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:id="@+id/SetScale"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:textColor="@color/white"
+            android:background="@drawable/rounded_rectangle"
+            android:text="@string/set_lines"/>
+    </LinearLayout>
+
+
+    <com.sumayya.androidvolumecontrolcustomviewapp.VolumeControlView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:id="@+id/volumeControl"
+        android:layout_margin="20dp"
+        app:volumeScale="20"
+        app:volumeLevelPercentage="50"
+        app:linesColor="@color/lineColor"
+        />
+
+</LinearLayout>

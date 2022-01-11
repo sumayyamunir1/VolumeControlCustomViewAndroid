@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AndroidVolumeControlCustomViewApp</string>
+    <string name="enableVolume">Enable</string>
+    <string name="volume_is_set_at">Volume is set at %d</string>
+    <string name="set_volume">SET VOLUME</string>
+    <string name="set_lines">SET LINES</string>
+    <string name="barNo">Number of bars</string>
+    <string name="volumepercentage">Enter volume percent</string>
+    <string name="volume_input_validation_message">Volume should be between 0 and 100</string>
+</resources>
